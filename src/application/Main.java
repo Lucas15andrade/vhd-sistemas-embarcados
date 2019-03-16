@@ -19,7 +19,7 @@ public class Main extends Application {
 			 * scene.getStylesheets().add(getClass().getResource("application.css").
 			 * toExternalForm()); primaryStage.setScene(scene); primaryStage.show();
 			 */
-			System.out.println("Executando");
+			//System.out.println("Executando");
 
 			Parent cena = FXMLLoader.load(getClass().getResource("Main.fxml"));
 			Scene scene = new Scene(cena);
