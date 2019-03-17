@@ -8,6 +8,7 @@
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
   <children>
@@ -55,8 +56,10 @@
             <JFXTextField fx:id="textValor" layoutX="128.0" layoutY="123.0" promptText="Digite o tempo em segundos" text="5" />
             <JFXButton fx:id="btnCompilar" buttonType="RAISED" layoutX="382.0" layoutY="123.0" onAction="#compilar" ripplerFill="#1b1b1b" style="-fx-background-color: #5997f9;" text="Compilar" />
             <JFXButton fx:id="btnExecutar" buttonType="RAISED" layoutX="462.0" layoutY="123.0" onAction="#executar" style="-fx-background-color: #5997f9;" text="Executar" />
-            <JFXButton fx:id="btnEscolherArquivo" layoutX="128.0" layoutY="59.0" text="Selecionar arquivo" />
             <JFXButton fx:id="btnAlterar" buttonType="RAISED" layoutX="313.0" layoutY="123.0" onAction="#alterarArquivo" style="-fx-background-color: #5997f9;" text="Alterar" />
+            <Text layoutX="52.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Novo valor:" />
+            <Text layoutX="48.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antigo valor:" />
+            <JFXTextField fx:id="textAntigoValor" layoutX="128.0" layoutY="80.0" />
       </children>
     </AnchorPane>
   </children>
